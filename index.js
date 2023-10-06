@@ -164,5 +164,11 @@ console.log(getExtention("README.md"))    //returns ".md"
 
 //Question 14.)
 
-const absoluteNineteen = () =>
-//TO BE CONTINUED
+const absoluteNineteen = (num) =>{
+if(num > 19){
+    return math.abs(3 *(num - 19))
+}else{
+    return math.abs(num - 19)
+}
+}
+console.log(absoluteNineteen(5))
