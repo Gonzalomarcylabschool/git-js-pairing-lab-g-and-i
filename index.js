@@ -120,7 +120,7 @@ console.log( largest(41, 108, 86));    //returns 108
 //Question 11.)
 
 const printTime = () =>{
-    let today =  new Date();
+   let today =  new Date();
     console.log(`${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`)
 }
 
@@ -164,6 +164,7 @@ console.log(getExtention("README.md"))    //returns ".md"
 
 //Question 14.)
 
+<<<<<<< HEAD
 const absoluteNineteen = (num) =>{
 if(num > 19){
     return math.abs(3 *(num - 19))
@@ -172,3 +173,39 @@ if(num > 19){
 }
 }
 console.log(absoluteNineteen(5))
+=======
+
+ // Ismael's Bonus Question
+//11
+
+const printTime = () => {
+    let today = new Date();
+    let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    return time;
+}
+console.log(printTime());
+
+console.log('--------')
+
+// 12
+const isLeapYear = (year) => {
+    return (year % 4 === 0  && year % 100 !== 0) || (year % 400 === 0);
+}
+
+console.log(isLeapYear(2000)); //returns true
+console.log( isLeapYear(1900));    //returns false
+console.log( isLeapYear(2020));    //returns true
+console.log( isLeapYear(1999));    //returns false
+
+console.log('------')
+// 13
+
+const getExtention = (fileName) => {
+    return fileName.slice(fileName.indexOf('.'))
+}
+console.log( getExtention("hello.txt"));     //returns ".txt"
+console.log( getExtention("app.js"));        //returns ".js"
+console.log( getExtention("README.md"));    //returns ".md"
+
+// 14 
+>>>>>>> 6a6ffbee5d301bc1fa89af8e3ca21aa740d7de3d
