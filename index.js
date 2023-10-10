@@ -1,6 +1,7 @@
+/*Hey Brandon and Izzy! Thanks for the submission! You both showed a solid understanding of the logic of these problems. I provided feedback on some of the code and main takeaways at the end.*/
 //Code your solutions in this file
 const fiveToOneHundred = () =>{
-    for(i=5 ; i<=100 ; i++){
+    for(i=5 ; i<=100 ; i++){//There should always be space between operators (i = 5; i <= 100; i++)
         console.log(i)
     }
 }
@@ -9,10 +10,10 @@ const fiveToOneHundred = () =>{
 //Problem #2
 const multiplesOfThree = () => {
     for (i=1; i <= 100; i++) {
-    if ( i % 3 === 0 ) {
-    console.log(i)  
+    if ( i % 3 === 0 ) {// this line should be indented
+    console.log(i)  // this line should be indented
     }
-}
+}// make sure that your indentations match. 
 }
 //multiplesOfThree();
 const multiplesOfThreeOrFive = () =>{
@@ -67,6 +68,10 @@ const isNegative = (num) =>{
         return true
     }
 }
+/*when programming, we want to avoid writing more than we must. 
+In this case, returning booleans is redundant. You can just return the expression in your conditional statement. 
+That will return True or False. 
+*/
 /*
 console.log(isNegative(3))
 console.log(isNegative(-2))
@@ -77,7 +82,7 @@ const triangleArea = (height, base) => {
     let area = (1/2) * height * base
     console.log(area)
 }
-
+//instruction asked to return a value, not console.log it.
 /*
 triangleArea(5, 7);    //returns 17.5
 triangleArea(6, 8);    //returns 24
@@ -93,6 +98,7 @@ const betweenTwentyAndFourty = (num) =>{
         return false
     }
 }
+//you can just return the expression in your conditional statement. 
 /*
 console.log(betweenTwentyAndFourty(4))     //return false
 console.log(betweenTwentyAndFourty(21))     //return true
@@ -109,6 +115,7 @@ const largest = (num1, num2, num3) => {
         return num3
     }
 }
+// This one is not wrong, but I would like to push you to use the Math.max method.
 /*
 console.log( largest(4, 6, 8));      //returns 8
 console.log( largest(30, 22, 17));    //returns 30
@@ -164,7 +171,7 @@ console.log(getExtention("README.md"))    //returns ".md"
 
 //Question 14.)
 
-<<<<<<< HEAD
+<<<<<<< HEAD//left in some merge conflict code. 
 const absoluteNineteen = (num) =>{
 if(num > 19){
     return math.abs(3 *(num - 19))
@@ -206,6 +213,15 @@ const getExtention = (fileName) => {
 console.log( getExtention("hello.txt"));     //returns ".txt"
 console.log( getExtention("app.js"));        //returns ".js"
 console.log( getExtention("README.md"));    //returns ".md"
+
+
+/*
+Hey Friends, I want to point out triangleArea first. This is the only one that needs to be corrected. It was for a small thing, but I would like you to fix it and resubmit it. 
+As for everything else, the code was good. I gave you some feedback on how you could elevate some of your code to the next level. 
+The main concern I have here is Code cleanliness. There needs to be consistency with semicolons, indentations, and spaces in your code. 
+It's not bad, but it's not good. 
+Besides that, You have a solid understanding of the problems and how to solve them. Keep up the good work. 
+*/
 
 // 14 
 >>>>>>> 6a6ffbee5d301bc1fa89af8e3ca21aa740d7de3d
